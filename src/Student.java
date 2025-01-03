@@ -8,6 +8,7 @@ public class Student  {
     private String courses;
     private int tuitionBalance;
     private static int costOfCourse = 600;
+    private static int id = 1000;
 
     //Constructor : prompt user to enter student's name and year
     public Student(){
@@ -21,6 +22,8 @@ public class Student  {
         System.out.println("; - Freshmen\n2 - Sophomore\n3 - Junior\n4 - Senior\nEnter student class level :");
         this.gradeYear = in.nextInt();
         System.out.println(firstName + " " + lastName + " " + gradeYear);
+
+        id++;
     }
 
     // Generate an ID
