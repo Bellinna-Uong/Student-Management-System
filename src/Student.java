@@ -37,7 +37,7 @@ public class Student  {
     // Enroll in courses
     public void enroll(){
         do {
-            System.out.println("Enter course to enroll (Q to quit) : ");
+            System.out.print("Enter course to enroll (Q to quit) : ");
             Scanner in = new Scanner(System.in);
             String course = in.nextLine();
             if (!course.equals("Q")){
@@ -52,6 +52,9 @@ public class Student  {
     }
 
     // View balance
+    public void viewBalance(){
+        System.out.println("Your balance is $" + tuitionBalance);
+    }
 
     // Pay the tuition
 
