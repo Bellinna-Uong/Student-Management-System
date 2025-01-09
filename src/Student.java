@@ -19,15 +19,16 @@ public class Student  {
         System.out.println("Enter Last Name: ");
         this.lastName = in.nextLine();
 
-        System.out.println("; - Freshmen\n2 - Sophomore\n3 - Junior\n4 - Senior\nEnter student class level :");
+        System.out.println("1 - Freshmen\n2 - Sophomore\n3 - Junior\n4 - Senior\nEnter student class level :");
         this.gradeYear = in.nextInt();
-        System.out.println(firstName + " " + lastName + " " + gradeYear);
 
         setStudentID();
+        System.out.println(firstName + " " + lastName + " " + gradeYear + " "+ studentID);
+
     }
 
     // Generate an ID
-    private void String void setStudentID() {
+    private void setStudentID() {
         // Grade level + ID
         id++;
         this.studentID = gradeYear + "" + id;
