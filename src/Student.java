@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 public class Student  {
-    private String firstName;
-    private String lastName;
-    private int gradeYear;
+    private final String firstName;
+    private final String lastName;
+    private final int gradeYear;
     private String studentID;
     private String courses = "";
     private int tuitionBalance = 0;
-    private static int costOfCourse = 600;
     private static int id = 1000;
 
     //Constructor : prompt user to enter student's name and year
@@ -40,6 +39,7 @@ public class Student  {
             String course = in.nextLine();
             if (!course.equals("Q")){
                 courses = courses + "\n   " + course;
+                int costOfCourse = 600;
                 tuitionBalance = tuitionBalance + costOfCourse;
             }
             else { break; }
